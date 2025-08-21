@@ -1,0 +1,161 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    >
+
+    <LinearLayout
+        android:background="@color/bluelight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <!-- Nama -->
+        <TextView
+            android:id="@+id/tvName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/popbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Nama: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:id="@+id/tvJk"
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Jenis Kelamin: "
+            android:textSize="14sp" />
+
+        <!-- CV -->
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Curriculum Vitae: "
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/btnCv"
+            android:fontFamily="@font/popbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Curriculum Vitae"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_file"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+        <!-- Tempat Lahir -->
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+
+            android:id="@+id/tvTempatLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Tempat Lahir: "
+            android:textSize="14sp" />
+
+        <!-- Tanggal Lahir -->
+        <TextView
+            android:id="@+id/tvTglLahir"
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Tanggal Lahir: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Surat Lamaran: "
+            android:textSize="14sp" />
+
+        <!-- Surat -->
+        <Button
+            android:id="@+id/btnSurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Surat Lamaran"
+            android:fontFamily="@font/popbol"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_file"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+        <!-- ImageView to display the image -->
+        <ImageView
+            android:id="@+id/imageViewCvSurat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:textColor="@color/white"
+            android:fontFamily="@font/popreg"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Status: "
+            android:textSize="14sp" />
+
+        <!-- Tombol Terima dan Tolak -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+
+            <Button
+                android:id="@+id/btnTerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/popbol"
+                android:backgroundTint="@color/yellow"
+                android:text="Terima"
+                android:textColor="@color/bluelight" />
+
+            <Button
+                android:id="@+id/btnTolak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="?attr/colorError"
+                android:text="Tolak"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

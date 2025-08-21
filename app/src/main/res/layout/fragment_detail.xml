@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp">
+
+    <LinearLayout
+        android:background="@color/bluelight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- Gambar -->
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:fontFamily="@font/popbol"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/white"
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="16sp" />
+
+        <!-- Detail -->
+        <TextView
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/white"
+            android:id="@+id/textViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="16sp" />
+
+        <!-- Syarat -->
+        <TextView
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/white"
+            android:id="@+id/textViewSyarat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="16sp" />
+
+        <!-- Tanggal -->
+        <TextView
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/white"
+            android:id="@+id/textViewTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="16sp" />
+
+        <!-- Tombol untuk membuka form -->
+        <Button
+            android:fontFamily="@font/popbol"
+            android:id="@+id/buttonOpenForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Isi Formulir"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

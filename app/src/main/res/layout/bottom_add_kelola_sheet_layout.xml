@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextInputLayout untuk Nama Kelola -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNamaKelola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout untuk Deskripsi Kelola -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputDeskripsiKelola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout untuk Detail Kelola -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Detail Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputDetailKelola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout untuk Syarat Kelola -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Syarat Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputSyaratKelola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout untuk URL Gambar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputUrlGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Input Tanggal Mulai -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Mulai Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTanggalMulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Input Tanggal Selesai -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Selesai Lowongan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTanggalSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Preview Gambar -->
+    <ImageView
+        android:id="@+id/previewGambarKelola"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Tombol Tampilkan Gambar -->
+    <Button
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/popbol"
+        android:id="@+id/btnSubmitUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Gambar" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/popbol"
+        android:id="@+id/btnSimpanKelola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+</LinearLayout>

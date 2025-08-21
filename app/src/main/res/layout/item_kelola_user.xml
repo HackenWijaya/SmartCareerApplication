@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bluelight"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:clipToPadding="false">
+
+    <!-- Gambar -->
+    <ImageView
+        android:id="@+id/imageViewKelolaUser"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Judul -->
+    <TextView
+        android:fontFamily="@font/popbol"
+        android:id="@+id/textViewTitleUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        android:text="English Webtoon Quality Control (Freelance)" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:fontFamily="@font/popreg"
+        android:id="@+id/textViewDescriptionUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:text="Melakukan pemeriksaan dan revisi hasil typesetting serta bertanggung jawab" />
+
+    <!-- Tombol -->
+    <Button
+        android:id="@+id/buttonCekPekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/popbol"
+        android:text="Cek Lowongan Pekerjaan"
+        android:textStyle="bold"
+        android:padding="12dp" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/bluelight">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/yellow"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingStart="7dp"
+            android:text="Ini Judul Berita"
+            android:textSize="15dp"
+            android:fontFamily="@font/popbol" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popreg"
+            android:paddingStart="7dp"
+            android:paddingBottom="7dp"
+            android:text="Ini adalah isi"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

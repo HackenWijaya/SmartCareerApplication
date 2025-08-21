@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/blue" /> <!-- Ganti warna sesuai kebutuhan -->
+    <corners android:radius="4dp" /> <!-- Sesuaikan untuk sudut kotak -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/bluelight" /> <!-- Ganti dengan warna border -->
+</shape>

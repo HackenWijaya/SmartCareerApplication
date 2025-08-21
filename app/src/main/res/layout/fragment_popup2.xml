@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/bluelight">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/yellow"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="5dp"
+            android:text="Ringkasan Profil"
+            android:textSize="20dp"
+            android:fontFamily="@font/popbol" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popreg"
+            android:textAlignment="inherit"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Tambahkan ringkasan profil singkat yang menyoroti keahlian dan pengalaman terkait dengan posisi yang dilamar. Ringkasan profil ini harus menarik perhatian perekrut dan membuat mereka ingin membaca lebih lanjut."
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/contohPenerapan"
+            android:textColor="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="5dp"
+            android:text="Contoh penerapan"
+            android:textSize="20dp"
+            android:fontFamily="@font/popbol" />
+        <TextView
+            android:id="@+id/textcontohpenerapan"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popreg"
+            android:textAlignment="inherit"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Seorang profesional dengan pengalaman 5 tahun dalam pengembangan perangkat lunak. Terampil dalam bahasa pemrograman Python dan memiliki kemampuan komunikasi yang baik."
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ringkasanprofil" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/bluelight"
+            android:fontFamily="@font/popbol"
+            android:text="Back" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
